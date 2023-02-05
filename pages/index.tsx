@@ -6,9 +6,10 @@ import Header from './components/Header'
 
 export default function Home() {
   return (
-      <div>
+      <>
         <Head>
           <title>quadseed</title>
+          <link rel='icon' href='https://github.com/quadseed.png'></link>
         </Head>
 
         <Header page='home' />
@@ -16,6 +17,6 @@ export default function Home() {
         <Card />
 
         <Footer />
-      </div>
+      </>
   )
 }
