@@ -7,7 +7,7 @@ function card() {
   const router = useRouter()
 
   return (
-    <div className='flex min-h-screen flex-col items-center justify-center space-y-8'>
+    <div className='flex flex-col items-center justify-center space-y-8 py-60 xl:py-80'>
       <div className='flex items-center space-x-5'>
         <Image
         className="rounded-full"
