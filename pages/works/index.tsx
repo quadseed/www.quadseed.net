@@ -24,19 +24,20 @@ function WorksHome({ allWorksData }: Props) {
 
       <Header page='works' />
 
-      <section className='flex min-h-screen flex-col items-center space-y-8'>
-        <h2 className='font-bold'>Works</h2>
+      <section className='flex flex-col items-center py-24 xl:py-36 space-y-9'>
+        <h2 className='font-bold text-4xl'>Works</h2>
 
-        <ul>
+        <ul className='space-y-6'>
           {allWorksData.map(({ id, title, description }) => (
-            <li key={id}>
-              <Link href={`/works/${id}`}>
+            <li key={id} className='space-y-2'>
+              <Link
+              href={`/works/${id}`}
+              className='text-[#f34d00] text-xl'
+              >
                 {title}
               </Link>
-              <br />
-              <small>
-                <p>{description}</p>
-              </small>
+
+              <p className='text-md'>{description}</p>
             </li>
           ))}
         </ul>
