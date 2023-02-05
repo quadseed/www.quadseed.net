@@ -10,7 +10,7 @@ function Header({ page }: Props) {
   const router = useRouter()
 
   return (
-    <nav className='fixed top-0 px-80 py-5 flex min-w-full items-center justify-end space-x-5 underline-offset-8 decoration-2'>
+    <nav className='fixed top-0 px-6 2xl:px-80 py-5 flex min-w-full items-center justify-end space-x-5 underline-offset-8 decoration-2'>
       <p
       className={page == 'home' ? 'underline font-bold hover:cursor-pointer' : 'font-bold hover:cursor-pointer'}
       onClick={() => {router.push('/')}}
