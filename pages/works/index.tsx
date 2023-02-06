@@ -21,7 +21,7 @@ function WorksHome() {
         <ul className='space-y-6'>
             <li key='TARS' className='space-y-2 text-center'>
               <Link
-              href='/works/tars'
+              href='/works/TARS'
               className='text-[#f34d00] text-xl'
               >
                 TARS Project
@@ -33,7 +33,7 @@ function WorksHome() {
         <ul className='space-y-6'>
             <li key='ChibaTech-Auth' className='space-y-2 text-center'>
               <Link
-              href='/works/chibatech-auth'
+              href='/works/ChibaTechAuth'
               className='text-[#f34d00] text-xl'
               >
                 ChibaTech-Auth
