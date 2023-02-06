@@ -29,10 +29,16 @@ function tars() {
           <p>このシステムは3つのソフトウェアで構成されています。</p>
 
           <div className='space-y-6'>
-            <div className='space-y-2'>
+            <div className='space-y-3'>
               <h3 className='font-semibold'>・TARS-Server</h3>
               <p>録画タスクを処理する中央のサーバです。</p>
               <p>ツイキャスの開発アカウントメニューからアプリケーションを発行する必要があります。</p>
+              <div className='space-y-2'>
+                <h4 className='font-semibold'>技術スタック</h4>
+                <p>・Webサーバ: FastAPI</p>
+                <p>・コメントストリーム: Websocket</p>
+                <p>・録画処理: ffmpeg</p>
+              </div>
               <Image
               src='/TARS-Server.gif'
               width={1000}
@@ -47,14 +53,18 @@ function tars() {
 
             </div>
 
-            <div className='space-y-2'>
+            <div className='space-y-3'>
               <h3 className='font-semibold'>・TARS-Outpost</h3>
               <p>ツイキャス側で提供されているWebHookを中継してTARS-ServerへWebsocketでデータを受け渡します。</p>
               <p>インターネット側からのアクセスを許可する必要があります。</p>
+              <div className='space-y-2'>
+                <h4 className='font-semibold'>技術スタック</h4>
+                <p>・WebSocketサーバ: FastAPI</p>
+              </div>
               <WorkLink link='https://github.com/quadseed/TARS-Outpost' title='TARS-Outpost - GitHub' />
             </div>
 
-            <div className='space-y-2'>
+            <div className='space-y-3'>
               <h3 className='font-semibold'>・TARS-UI</h3>
               <p>TARS-Server用のWebGUIです。</p>
               <p>現在、作成中です...</p>

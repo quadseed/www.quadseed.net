@@ -23,12 +23,17 @@ function chibaTechAuth() {
           <hr className="h-px my-8 bg-gray-200 border-1"></hr>
         </div>
 
-        <div className='px-7 lg:px-60 space-y-2'>
-          <p>千葉工大の学生・教員用にサービスを作成する場合に利用できる認証ライブラリです。</p>
+        <div className='px-7 lg:px-60 space-y-3'>
+          <p>千葉工大の学生・教員用にサービスを作成する場合に利用できるNode.js用の認証ライブラリです。</p>
           <p>
             学生や教員に割り当てられたGoogle WorkspaceアカウントをOAuthで認証した上で、
             Googleから返却された情報をアドレスを解析したデータを返却します。
           </p>
+
+          <div className='space-y-2'>
+                <h4 className='font-semibold'>使用言語</h4>
+                <p>・TypeScript</p>
+              </div>
           <div className='text-[#f34d00] underline-offset-4 decoration-2 space-y-2 my-2'>
             <WorkLink
               link='https://chiba-tech-auth-demo.vercel.app'
