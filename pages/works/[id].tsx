@@ -24,10 +24,13 @@ function Works({ workData
 
       <Header page='works' />
 
-      <article className='flex min-h-screen flex-col items-center justify-center space-y-8'>
-        <h1>{workData.title}</h1>
-        <div>
-          {workData.description}
+      <article className='flex flex-col items-center py-24 xl:py-36 space-y-8'>
+        <div className='text-center space-y-2'>
+          <h1 className='font-bold text-3xl'>{workData.title}</h1>
+          <p className='text-base text-gray-500'>
+            {workData.description}
+          </p>
+          <hr className="h-px my-8 bg-gray-200 border-1"></hr>
         </div>
 
         <div dangerouslySetInnerHTML={{ __html: workData.contentHtml }} />
