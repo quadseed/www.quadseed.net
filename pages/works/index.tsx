@@ -37,7 +37,7 @@ function WorksHome({ allWorksData }: Props) {
                 {title}
               </Link>
 
-              <p className='text-md'>{description}</p>
+              <p className='text-md text-gray-500'>{description}</p>
             </li>
           ))}
         </ul>
