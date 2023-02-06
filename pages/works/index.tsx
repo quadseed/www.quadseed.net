@@ -1,20 +1,11 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { GetStaticProps } from 'next/types'
 import React from 'react'
-import { getWorksData } from '../../lib/works'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 
-type Props = {
-  allWorksData: {
-      id: string
-      title: string
-      description: string
-  }[]
-}
 
-function WorksHome({ allWorksData }: Props) {
+function WorksHome() {
   return (
     <>
       <Head>
@@ -28,18 +19,15 @@ function WorksHome({ allWorksData }: Props) {
         <h2 className='font-bold text-4xl'>Works</h2>
 
         <ul className='space-y-6'>
-          {allWorksData.map(({ id, title, description }) => (
-            <li key={id} className='space-y-2'>
+            <li key='TARS' className='space-y-2'>
               <Link
-              href={`/works/${id}`}
+              href='/works/tars'
               className='text-[#f34d00] text-xl'
               >
-                {title}
+                TARS Project
               </Link>
-
-              <p className='text-md text-gray-500'>{description}</p>
+              <p className='text-md text-gray-500'>ツイキャス自動録画システム</p>
             </li>
-          ))}
         </ul>
       </section>
 
@@ -49,12 +37,3 @@ function WorksHome({ allWorksData }: Props) {
 }
 
 export default WorksHome
-
-export const getStaticProps: GetStaticProps = async () => {
-  const allWorksData = getWorksData()
-  return {
-      props: {
-          allWorksData
-      }
-  }
-}
