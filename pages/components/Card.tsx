@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { VscGithub, VscTwitter } from 'react-icons/vsc'
 import { useRouter } from 'next/router'
+import Link from 'next/link'
 
 function card() {
   const router = useRouter()
@@ -20,14 +21,16 @@ function card() {
       </div>
 
       <div className='justify-center flex items-center space-x-6'>
-        <VscGithub
-        className='w-9 h-9 text-gray-500 hover:cursor-pointer transition-all duration-200 hover:shadow-2xl rounded-full'
-        onClick={() => {router.push('https://github.com/quadseed')}}
-        />
-        <VscTwitter
-        className='w-9 h-9 text-gray-500 hover:cursor-pointer transition-all duration-200 hover:shadow-2xl rounded-full'
-        onClick={() => {router.push('https://twitter.com/t_vx_')}}
-        />
+        <Link href='https://github.com/quadseed'>
+          <VscGithub
+          className='w-9 h-9 text-gray-500 hover:cursor-pointer transition-all duration-200 hover:shadow-2xl rounded-full'
+          />
+        </Link>
+        <Link href='https://twitter.com/t_vx_'>
+          <VscTwitter
+          className='w-9 h-9 text-gray-500 hover:cursor-pointer transition-all duration-200 hover:shadow-2xl rounded-full'
+          />
+        </Link>
       </div>
     </div>
   )
