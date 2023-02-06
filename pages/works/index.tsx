@@ -53,6 +53,18 @@ function WorksHome() {
               <p className='text-md text-gray-500'>千葉工大用の非公式認証ライブラリ</p>
             </li>
         </ul>
+
+        <ul className='space-y-6'>
+            <li key='www-quadseed-net' className='space-y-2 text-center'>
+              <Link
+              href='/works/www-quadseed-net'
+              className='text-[#f34d00] text-xl'
+              >
+                www.quadseed.net
+              </Link>
+              <p className='text-md text-gray-500'>このサイト</p>
+            </li>
+        </ul>
       </section>
 
       <Footer />
