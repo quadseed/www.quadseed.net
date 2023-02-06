@@ -31,6 +31,18 @@ function WorksHome() {
         </ul>
 
         <ul className='space-y-6'>
+            <li key='Archive-Player' className='space-y-2 text-center'>
+              <Link
+              href='/works/archive-player'
+              className='text-[#f34d00] text-xl'
+              >
+                Archive-Player Project
+              </Link>
+              <p className='text-md text-gray-500'>アーカイブプレイヤー（開発中）</p>
+            </li>
+        </ul>
+
+        <ul className='space-y-6'>
             <li key='ChibaTech-Auth' className='space-y-2 text-center'>
               <Link
               href='/works/chibatech-auth'
