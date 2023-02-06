@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 import WorkLink from '../components/WorkLink'
 
-function ChibaTechAuth() {
+function chibaTechAuth() {
   return (
     <>
       <Head>
@@ -53,4 +53,4 @@ function ChibaTechAuth() {
   )
 }
 
-export default ChibaTechAuth
+export default chibaTechAuth
