@@ -19,7 +19,7 @@ function WorksHome() {
         <h2 className='font-bold text-4xl'>Works</h2>
 
         <ul className='space-y-6'>
-            <li key='TARS' className='space-y-2'>
+            <li key='TARS' className='space-y-2 text-center'>
               <Link
               href='/works/tars'
               className='text-[#f34d00] text-xl'
@@ -27,6 +27,18 @@ function WorksHome() {
                 TARS Project
               </Link>
               <p className='text-md text-gray-500'>ツイキャス自動録画システム</p>
+            </li>
+        </ul>
+
+        <ul className='space-y-6'>
+            <li key='ChibaTech-Auth' className='space-y-2 text-center'>
+              <Link
+              href='/works/chibatech-auth'
+              className='text-[#f34d00] text-xl'
+              >
+                ChibaTech-Auth
+              </Link>
+              <p className='text-md text-gray-500'>千葉工大用の非公式認証ライブラリ</p>
             </li>
         </ul>
       </section>
