@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React from 'react'
-import { CgDarkMode } from 'react-icons/cg'
 
 type Props = {
   page: string
@@ -20,15 +19,6 @@ function Header({ page }: Props) {
         </p>
       </Link>
 
-      <Link href='/works'>
-        <p
-        className={page == 'works' ? 'underline font-bold hover:cursor-pointer' : 'font-bold hover:cursor-pointer'}
-        >
-          Works
-        </p>
-      </Link>
-
-      <CgDarkMode className='w-6 h-6 hover:cursor-pointer' />
     </nav>
   )
 }
